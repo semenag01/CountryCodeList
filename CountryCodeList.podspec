@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/quickbirdstudios/BloggerBird.git', :tag => s.version.to_s }
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
-  s.source_files = 'Sources/CountryCodeList/**/*'
+  s.source_files = 'Sources/CountryCodeList/**/*.swift'
   s.resources = 'Sources/CountryCodeList/Resources/**/*'
 end
