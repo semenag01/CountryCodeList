@@ -1,12 +1,12 @@
 import Foundation
 
-public class CountryCodeList {
+public class CountryList {
   public enum CountryCodeError: Error {
     case countryFileNotFound
   }
-  
+
   public private (set) var countries: [Country]
-  
+
   public init(locale: Locale = .autoupdatingCurrent, preorderCountries: [String] = []) throws {
     let decoder = JSONDecoder()
     let bundle: Bundle = Bundle.module
@@ -26,7 +26,7 @@ public class CountryCodeList {
     self.countries = preodred
     self.countries.append(contentsOf: countries.filter { !preorderCountries.contains($0.code) })
   }
-  
+
   public convenience init(countryCode: String) throws {
     try self.init(locale: Locale(identifier: countryCode))
   }
