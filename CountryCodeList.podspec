@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CountryCodeList'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A library which can be used as datasource for country phone extesnsion list.'
   s.homepage         = 'https://github.com/maksimpetrovskycorewill/CountryCodeList'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
